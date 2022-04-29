@@ -1,0 +1,16 @@
+Data: 29/04/2022
+
+Medição da tomada da bancada do SENAC: 121,4V
+(OBS: Utilizei o motimedro na Medição de Corrente Alternada em 200V)
+Teste da continuidade do cabo de força: Teste com 100% de Sucesso
+(OBS: Baixa resistencia e o mesmo não está rompido)
+Medição do cabo de força ligado a tomada: 121,4V
+
+Apos ligar a fonte
+Medição da Corrente Continua da Fonte: Fonte totalmente funcional e correta
+(OBS: 3, 3V-LA, 5V-VE E 12V-AM)
+ 
+ Testando os Bonners da Protoboard: todos estão com suas respectivas tensões corretas
+ (OBS: Na Protoboard temos as Tensões de 12V, 5V E 7V (12-5-7V))
+ 
+ Apos ligar o Air Coller e realizar o teste dele com as tensões de 5V e de 12V ele funcionou corretamente.
