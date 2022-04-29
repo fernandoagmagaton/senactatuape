@@ -16,4 +16,9 @@ Medição da Corrente Continua da Fonte: Fonte totalmente funcional e correta
  Apos ligar o Air Coller e realizar o teste dele com as tensões de 5V e de 12V ele funcionou corretamente.
  Tentativa feita com sucesso de ligar 4 coolers na Protoboard
  Testando 4 coolers no modo de adaptações técnicas
- Ápos teste ded 2 coolers com 2 em paralelos e 2 em sequência, os dois ligaram sucessivamente bem.
+ Ápos teste ded 2 coolers com 2 em paralelos e 2 em sequência, os dois ligaram sucessivamente bem
+ Teste do Led: Totalmente Funcional
+ (OBS: Teste no motimetro em HFE - NPN/LED)
+ Teste do Resistor: Medição de 327
+ (OBS: Teste no motimetro em Ohm - 200)
+ 
