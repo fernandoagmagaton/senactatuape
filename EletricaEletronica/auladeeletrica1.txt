@@ -14,3 +14,6 @@ Medição da Corrente Continua da Fonte: Fonte totalmente funcional e correta
  (OBS: Na Protoboard temos as Tensões de 12V, 5V E 7V (12-5-7V))
  
  Apos ligar o Air Coller e realizar o teste dele com as tensões de 5V e de 12V ele funcionou corretamente.
+ Tentativa feita com sucesso de ligar 4 coolers na Protoboard
+ Testando 4 coolers no modo de adaptações técnicas
+ Ápos teste ded 2 coolers com 2 em paralelos e 2 em sequência, os dois ligaram sucessivamente bem.
