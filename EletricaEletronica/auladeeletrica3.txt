@@ -1,0 +1,9 @@
+Data: 09/05
+
+Teste da tomada (fase com neutro): 123,8
+Teste da tomada (neutro com terra): 0,2
+Teste da tomada (fase com terra): 123,4
+Teste de resistência do cabo (Ohms): fase c/ fase = 00,4 - neutro c/ neutro 00,2 - terra c/ terra = 00,1
+Teste do cabo de força (medida na escala de corrente continua): 0,1 (Fase c/ fase); 0,1 (Neutro c/ neutro); 0,3 (Terra c/ terra).(Cabo bom)
+Teste do cabo da força (medida na escala de corrente alternada): Fase com Neutro= 123,8 - Neutro com Terra= 0,1 - Fase com Terra=  123,3
+Teste da Fonte (Utilizando o PowerSuply): -12V = 12.2V / +12V2 = 12,1V / 12V1 = 12,2V / 5V = 5V / 3.3V = 3.3V
