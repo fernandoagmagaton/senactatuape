@@ -1,0 +1,29 @@
+O que fazer:
+#01_ Instalação dos Navegadores (GDEB-GTK)
+	_a - Google Chrome
+	_b - Microsoft Edge
+	_c - Opera
+	
+#02_ Instalação do suporte ao TTF (TrueType Fonts)
+	Gerenciador de Aplicativo (Pesquisar)
+
+============================== DESAFIO DA AULA DE HOJE =================================
+#03_ Instalação dos Pacote Office
+	 _a - Microsoft TrueType Core Fonts (Gerenciador de Aplicativo)
+	 _b - WPS Office for Linux (Pacote DEB)
+	 _c - FreeOffice for Linux (Pacote DEB)
+	 _d - OnlyOffice Desktop for Linux (AppImagem) <-- PESQUISAR O QUE É APPIMAGEM
+	 _e - Microsoft Teams for Linux (Pacote DEB)
+	 _f - Skype for Linux (Pacote DEB)
+	 _g - KolourPaint (Gerenciador de Aplicativo)
+
+#04_ Instalação dos Editores de Texto para Desenvolvimento
+	 _a - Visual Studio Code for Linux (Pacote DEB) <-- VAMOS TRABALHAR BASTANTE COM ELE
+	 _b - NotepadQQ for Linux (Gerenciador de Aplicativo)
+	 _c - Atom for Linux (Pacote DEB)
+	 _d - Sublime for Linux (Pacote DEB)
+	 
+#05_ Instalação de Reprodutores de Música Editor de Áudio e Vídeo
+	_a - VLC VideoOnLan for Linux (Gerenciador de Aplicativo)
+	_b - Audacity (Gerenciador de Aplicativo)
+	_c - Kdenlive (AppImagem) <-- PESQUISAR O QUE É APPIMAGEM
