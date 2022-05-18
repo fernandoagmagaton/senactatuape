@@ -1,0 +1,19 @@
+Data: 19/05
+Aula 04
+
+CTRL + T = Abrir Terminal
+
+Comandos do Linux:
+
+sudo apt update = atualiza as listas do Apt
+sudo apt upgrade = atualiza todos os software
+sudo apt full-upgrade = atualiza todos os software completa
+sudo apt dist-upgrade = atualiza o sistema operacional (Kerne)
+sudo apt autoremove = remoção de software não mais necessários
+sudo apt autoclean = fazer a limpeza do sistema
+sudo reboot = reinicia
+sudo apt install = instala aplicativos
+sudo apt install psensor
+sudo apt install p7zip-full pyzip-rar guvcview cheese = instala vários de ums só vez
+sudo apt install kazam vlc audacity kolourpaint notepadqq = instala vários de ums só vez
+sudo init 0 = fecha o programa
