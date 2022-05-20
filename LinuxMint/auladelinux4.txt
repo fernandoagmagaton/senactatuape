@@ -1,0 +1,55 @@
+Data: 20/05
+
+Procedimentos da aula de hoje:
+
+1ºO Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft para Windows, 
+Linux e macOS. Ele inclui suporte para depuração, controle de versionamento Git incorporado, 
+realce de sintaxe, complementação inteligente de código, snippets e refatoração de código. 
+Ele é customizável, permitindo que os usuários possam mudar o tema do editor, teclas de atalho 
+e preferências. Ele é um software livre e de código aberto, apesar do download oficial estar 
+sob uma licença proprietária.
+2ºhttps://code.visualstudio.com/download
+	Versão: .deb (Debian, Ubuntu 64 Bits)
+		Salvar aquivo 
+   3ºTerminal (Ctrl+Alt+T)
+	sudo apt update 
+	sudo apt install vim git python cloc
+  4ºMenu
+	Busca Indexada
+		vscode
+			Dark Theme
+			Notifications: Pacote PT-BR
+			Disable: Mostrar página inicial na inicialização
+  5ºMenu
+	Busca Indexada
+		Aplicativos de Preferencias
+			Texto puro: Visual Studio Code
+			Código fonte: Visual Studio Code
+  6ºPortuguese (Brazil) Language Pack for Visual Studio Code
+	(Sem necessidade de configuração)
+
+Brazilian Portuguese - Code Spell Checker (Corretor Ortográfico de Código)
+Manter selecionado a extensão: Brazilian Portuguese - Code Spell Checker
+	Pressionar F1
+		Show Spell Checker Configuration Info
+			User
+				Language
+					English (en_us)
+					Portuguese (pt_br)
+					Portuguese - Brazil (pt-br)
+				File Types and Programming Languages
+					shellscript, python, markdown, etc...
+   7ºGerenciar
+	Configurações
+		Code Spell Checker
+			C Spell: Enabled Language Ids: 
+				Adicionar Item: shellscript
+			C Spell: Language: en,pt,pt-BR
+			C Spell: Max Duplicate Problems: 5000
+			C Spell: Max Number Of Problems: 100000
+		Editor
+			Editor: Tab Size: 4
+			Editor: Detect Indentation: False (Off)
+			Editor: Insert Spaces: False (Off)
+		Files
+			Files: Eol: \n (LF)
