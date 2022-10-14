@@ -1,0 +1,55 @@
+Configuração do Switch
+
+!Modo EXEC privilegiado
+enable
+
+!Configurar Data/Hora
+clock set 14:30:00 14 October 2022
+
+!Modo configuração Global
+configure terminal
+
+!Altera o nome do switch
+hostname sw-g02
+
+!Habilitar o serviço de criptografia
+service password-encryotion
+
+!Habilitar o serviço Marcação de Data/Hora
+service timestamps log datetime msec
+
+!Habilitar segurança de acesso
+login block-for 160 attempts 4 within 60
+
+!Desabiliar o recurso de tradução de Nomes
+no ip domain-lookup
+
+!DESAFIO: Procurar na internet imagens do tipo ASCII ART p/ Cisco
+
+!Configurar o Banner da Mensagem do Dia
+banner motd #switch do Grupo-02#
+
+!Habilitar a segurança do Enable
+enable secret 123@senac
+
+!Criar os usuarios locais
+username <nome> secret 123@senac
+
+!Configurar a Porta Console
+line console 0
+
+        !Habilitar autenticação local
+        login local
+
+        !Sincronismo de Logs
+        logging synchronous
+
+
+    !Habilitar a segurança de tempo
+    exec=timeout 5 30
+
+    !Salvar
+    CTRL+Z ou end
+    copy run star
+disable
+exit
