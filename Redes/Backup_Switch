@@ -1,0 +1,190 @@
+Backup Switch G-02 - 04/11
+
+!
+version 12.2
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec
+service password-encryption
+!
+hostname sw-g02
+!
+boot-start-marker
+boot-end-marker
+!
+enable secret 5 $1$zh3M$NUe86bTNWTYozksxfbGag1
+!
+username fernando secret 5 $1$PU4P$JfmR/hNqLHfeNxHkKFWf4/
+username joao secret 5 $1$zC5j$z6TbHKmqNnNQtuYtaq5FJ1
+username nicolas secret 5 $1$c.eM$f7iY21zoan6R.PHW8ZVM00
+username gustavo secret 5 $1$je1Q$.I67caZ0XZBZdLCNaNK4Q.
+!
+!
+no aaa new-model
+system mtu routing 1500
+no ip domain-lookup
+ip domain-name cisco.com
+!
+!
+login block-for 160 attempts 4 within 60
+!
+!
+crypto pki trustpoint TP-self-signed-446277120
+ enrollment selfsigned
+ subject-name cn=IOS-Self-Signed-Certificate-446277120
+ revocation-check none
+ rsakeypair TP-self-signed-446277120
+!
+!
+crypto pki certificate chain TP-self-signed-446277120
+ certificate self-signed 01
+  30820246 308201AF A0030201 02020101 300D0609 2A864886 F70D0101 04050030 
+  30312E30 2C060355 04031325 494F532D 53656C66 2D536967 6E65642D 43657274 
+  69666963 6174652D 34343632 37373132 30301E17 0D393330 33303130 30303130 
+  395A170D 32303031 30313030 30303030 5A303031 2E302C06 03550403 1325494F 
+  532D5365 6C662D53 69676E65 642D4365 72746966 69636174 652D3434 36323737 
+  31323030 819F300D 06092A86 4886F70D 01010105 0003818D 00308189 02818100 
+  E8A0DCD2 E315AC7C 18AF150F CF63005E CDD073BF E7FD55EA 7604B050 878940C6 
+  B139AF1D 71C98CF1 6225E2CF 2D0BCA02 9458D7F4 890529A4 0AA2EF86 8DF18F3D 
+  D1C7F659 C50BC92A 2DC110C8 EEB87786 2027679D 8BA62F5B CAFAAF7E 93E948BD 
+  D5044CE6 A18A645D A84B8846 2CCC425F E678980F E62C0FEF CA554968 F26F7E25 
+  02030100 01A37030 6E300F06 03551D13 0101FF04 05300301 01FF301B 0603551D 
+  11041430 12821073 772D6730 322E6369 73636F2E 636F6D30 1F060355 1D230418 
+  30168014 5D3CEE46 F421E71C CD4E478C 8D5549DA E744E8D0 301D0603 551D0E04 
+  1604145D 3CEE46F4 21E71CCD 4E478C8D 5549DAE7 44E8D030 0D06092A 864886F7 
+  0D010104 05000381 81009E76 B8BFE650 4E66D7C1 11BA0B4F 41DFBC94 2175B833 
+  66F82E25 60695458 789E4C93 48E89896 32C018CC AFC52223 780AF7D1 86BAAFA7 
+  4C70AB7D 867B68FD 7C17B7A6 98D5D174 30D7A7D3 E39EED9A 61B2FE83 15F924C8 
+  0A842C4B 89F535AA 88553B78 C7E47C3F 62CEE893 E4050768 781DCC67 970C1FD7 
+  EF42BC66 B58AF694 7F4B
+  quit
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+ip ssh time-out 60
+ip ssh authentication-retries 2
+ip ssh version 2
+!
+!
+!
+interface FastEthernet0/1
+!
+interface FastEthernet0/2
+ description interface de Acesso da VLAN 21 do Primeiro Usuario
+ switchport access vlan 21
+ switchport mode access
+!
+interface FastEthernet0/3
+ description interface de Acesso da VLAN 22 do Segundo Usuario
+ switchport access vlan 22
+ switchport mode access
+!
+interface FastEthernet0/4
+ description Interface de Acesso da VLAN 23 do Terceiro Usuario
+ switchport access vlan 23
+ switchport mode access
+!
+interface FastEthernet0/5
+ description Interface de Acesso da VLAN 24 do Quarto  Usuario
+ switchport access vlan 24
+ switchport mode access
+!
+interface FastEthernet0/6
+ description Interface de Acesso da VLAN 25 Wireless
+ switchport access vlan 25
+ switchport mode access
+!
+interface FastEthernet0/7
+ shutdown
+!
+interface FastEthernet0/8
+ shutdown
+!
+interface FastEthernet0/9
+ shutdown
+!
+interface FastEthernet0/10
+ shutdown
+!
+interface FastEthernet0/11
+ shutdown
+!         
+interface FastEthernet0/12
+ shutdown
+!
+interface FastEthernet0/13
+ shutdown
+!
+interface FastEthernet0/14
+ shutdown
+!
+interface FastEthernet0/15
+ shutdown
+!
+interface FastEthernet0/16
+ shutdown
+!
+interface FastEthernet0/17
+ shutdown
+!
+interface FastEthernet0/18
+ shutdown
+!
+interface FastEthernet0/19
+ shutdown 
+!
+interface FastEthernet0/20
+ shutdown
+!
+interface FastEthernet0/21
+ shutdown
+!
+interface FastEthernet0/22
+ shutdown
+!
+interface FastEthernet0/23
+ shutdown
+!
+interface FastEthernet0/24
+ description Interface de Trunk com o Router 2911 do Grupo-02
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface GigabitEthernet0/1
+!
+interface GigabitEthernet0/2
+!
+interface Vlan1
+ no ip address
+!
+interface Vlan20
+ description interface SVI de Gerenciamento do Grupo-02
+ ip address 172.16.20.253 255.255.255.0
+!
+ip classless
+ip http server
+ip http secure-server
+!
+!
+!
+!
+!
+banner motd ^Cswitch do Grupo-02^C
+!
+line con 0
+ logging synchronous
+ login local
+line vty 0 4
+ exec-timeout 5 30
+ logging synchronous
+ login local
+ transport input ssh
+line vty 5 15
+ login
+!
+end
